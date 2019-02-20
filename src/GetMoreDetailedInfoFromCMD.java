@@ -2,6 +2,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Mostly for testing purposes.
+ */
 public class GetMoreDetailedInfoFromCMD {
 
 	public static void main(String[] args) {
@@ -10,15 +13,19 @@ public class GetMoreDetailedInfoFromCMD {
 			String s = "";
 			String buffer = r.readLine();
 			
+			/* Getting rid of the first empty line */
+			buffer = r.readLine();
+			
 			while(buffer != null) {
 				s += buffer + "\n";
-				buffer = r.readLine();
 				System.out.println(buffer);
 				System.out.println(buffer.equals(""));
 				System.out.println(buffer.indexOf(":"));
 				System.out.println(buffer.substring(0, buffer.indexOf(":")));
-				
+				System.out.println(buffer.substring(buffer.indexOf(':') + 1).trim());				
 				System.out.println("=====================================");
+				
+				buffer = r.readLine();
 				
 				try {
 					Thread.sleep(1000);
