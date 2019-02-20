@@ -1,0 +1,50 @@
+
+Nombre de imagen:   System Idle Process
+PID:                0
+Nombre de sesi¢n:   Services
+N£m. de sesi¢n:     0
+Uso de memoria:     8 KB
+Estado:             Unknown
+Nombre de usuario:  NT AUTHORITY\SYSTEM
+Tiempo de CPU:      20:44:17
+T¡tulo de ventana:  N/D
+
+Nombre de imagen:   System
+PID:                4
+Nombre de sesi¢n:   Services
+N£m. de sesi¢n:     0
+Uso de memoria:     600 KB
+Estado:             Unknown
+Nombre de usuario:  N/D
+Tiempo de CPU:      0:11:16
+T¡tulo de ventana:  N/D
+
+Nombre de imagen:   Registry
+PID:                120
+Nombre de sesi¢n:   Services
+N£m. de sesi¢n:     0
+Uso de memoria:     78.168 KB
+Estado:             Unknown
+Nombre de usuario:  N/D
+Tiempo de CPU:      0:00:01
+T¡tulo de ventana:  N/D
+
+Nombre de imagen:   SearchProtocolHost.exe
+PID:                1968
+Nombre de sesi¢n:   Services
+N£m. de sesi¢n:     0
+Uso de memoria:     13.128 KB
+Estado:             Unknown
+Nombre de usuario:  N/D
+Tiempo de CPU:      0:00:00
+T¡tulo de ventana:  N/D
+
+Nombre de imagen:   WmiPrvSE.exe
+PID:                13164
+Nombre de sesi¢n:   Services
+N£m. de sesi¢n:     0
+Uso de memoria:     9.520 KB
+Estado:             Unknown
+Nombre de usuario:  N/D
+Tiempo de CPU:      0:00:00
+T¡tulo de ventana:  N/D
