@@ -2,25 +2,33 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class SimplifiedTasksDataCollector {
+	/** Number of fields */
 	private final int nFields = 9;
+	/** Contains the name of each field */
 	private final String[] fieldNames;
-	
+	/** Maximum number of rows of information */
 	private int size = 10000;
-	
-	private String[] imageName;
-	private int[] pid;
-	private String[] sessionName;
-	private int[] sessionNumber;
-	private int[] memUsage;
-	private String[] state;
-	private String[] userName;
-	/**
-	 * Expressed in seconds.
-	 */
-	private int[] cpuTime;
-	private String[] windowTitle;
-	
+	/** Number of actual elements stored */
 	private int numElems;
+	
+	/** Process' image name */
+	private String[] imageName;
+	/** Process' PID */
+	private int[] pid;
+	/** Process' session name */
+	private String[] sessionName;
+	/** Process' session number */
+	private int[] sessionNumber;
+	/** Process' memory usage (KBs) */
+	private int[] memUsage;
+	/** Process' state */
+	private String[] state;
+	/** Process' user name */
+	private String[] userName;
+	/** Process' CPU time */
+	private int[] cpuTime;
+	/** Process' window title */
+	private String[] windowTitle;
 	
 	/*
 	 * Instead of running the command itself it takes a file as an input and parses it.
@@ -169,5 +177,10 @@ public class SimplifiedTasksDataCollector {
 			total += memUsage[i];
 		
 		return total;
+	}
+	
+	public void printMemoryUsagePerApp() {
+		for (int i = 0 ; i < numElems ; i++)
+			System.out.println("Proceso: " + imageName[i] + "\nUso memoria: " + memUsage[i] + " KB" + "\n=====================");
 	}
 }
